@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Staylas LLC - Global E-commerce & Platform Ventures</title>
+    <title>Global Staylas LLC - A Diversified Digital Holding Company</title>
     <style>
         :root {
             --primary-color: #0d214d; /* Dark Blue */
             --secondary-color: #007bff; /* Bright Blue */
+            --accent-color: #17a2b8;  /* Teal */
             --dark-text: #2c3e50; /* Dark Gray */
             --light-text: #5a6a7a; /* Medium Gray */
             --background-color: #f8f9fa; /* Light Gray Background */
@@ -23,7 +24,7 @@
         }
 
         .container {
-            max-width: 960px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -31,20 +32,20 @@
         .header {
             background: linear-gradient(90deg, var(--primary-color) 0%, #1a3a7a 100%);
             color: white;
-            padding: 3rem 2rem;
+            padding: 3rem 2.5rem;
             border-radius: 12px;
             text-align: center;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
         .header h1 {
             margin: 0;
-            font-size: 3rem;
+            font-size: 3.2rem;
             font-weight: 700;
         }
 
         .header p {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             opacity: 0.9;
             margin-top: 10px;
         }
@@ -58,17 +59,18 @@
         }
 
         .section h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             color: var(--primary-color);
             border-bottom: 3px solid #e9ecef;
             padding-bottom: 15px;
             margin-top: 0;
             margin-bottom: 25px;
         }
-
+        
+        /* Grid Layout for lists */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             list-style: none;
             padding: 0;
@@ -77,16 +79,30 @@
         .grid li {
             background-color: #fdfdfd;
             border: 1px solid #eee;
-            padding: 20px;
+            border-left: 5px solid var(--secondary-color);
+            padding: 20px 25px;
             border-radius: 8px;
+            font-size: 1.05rem;
             font-weight: 500;
             transition: all 0.3s ease;
+        }
+
+        .grid li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+        }
+
+        /* Specific style for Upcoming Projects grid */
+        .upcoming-grid li {
+             border-left-color: var(--accent-color);
+             font-size: 1rem;
         }
 
         .grid li strong {
             color: var(--primary-color);
             display: block;
             margin-bottom: 5px;
+            font-size: 1.1rem;
         }
 
         .footer {
@@ -102,7 +118,6 @@
             text-decoration: none;
             font-weight: 600;
         }
-
         a:hover {
             text-decoration: underline;
         }
@@ -114,44 +129,49 @@
         
         <header class="header">
             <h1>Global Staylas LLC</h1>
-            <p>Building and Scaling Digital Platforms for the Global Economy</p>
+            <p>A Diversified Private Holding Company for Global Digital Ventures</p>
         </header>
 
         <main>
             <section class="section">
                 <h2>Our Mission</h2>
                 <p>
-                    Global Staylas LLC is a US-based private company focused on developing and managing a diverse portfolio of international **online platforms**. Our mission is to build, operate, and scale innovative digital ventures that facilitate global commerce, connect users, and provide high-value online services.
+                    Global Staylas LLC is a US-based private company. Our mission is to build, operate, and scale a diverse portfolio of high-growth international online platforms, facilitating global commerce, digital services, and user connectivity across multiple sectors.
                 </p>
             </section>
 
             <section class="section">
-                <h2>Our Core Activities</h2>
-                <p>We operate across multiple sectors within the digital economy, focusing on high-growth areas:</p>
+                <h2>Ongoing Projects</h2>
+                <p>Our team is currently managing and scaling several key platforms:</p>
                 <ul class="grid">
                     <li>
-                        <strong>Global E-commerce Integration</strong>
-                        We build and manage platforms designed to integrate with global e-commerce ecosystems, including solutions for **Shopify**, **Amazon**, and **Ali Express**.
+                        <strong>Global Staylas Housing Platform</strong>
+                        A specialized digital marketplace for housing and rental services.
                     </li>
                     <li>
-                        <strong>Digital Marketplace Development</strong>
-                        We create and operate niche online marketplaces and service platforms that connect specific user groups and providers.
+                        <strong>HousingMates Platform</strong>
+                        A dedicated service platform for finding and managing shared living arrangements.
                     </li>
                     <li>
-                        <strong>Digital Services & Support</strong>
-                        We provide expert-level online support and management services for a variety of digital ventures.
+                        <strong>Staylas Shopping (E-commerce)</strong>
+                        An integration venture working with global partners like **Shopify, Amazon, Walmart, and Ali Express** to facilitate cross-border e-commerce.
                     </li>
                 </ul>
             </section>
             
             <section class="section">
-                <h2>Our Current Platforms</h2>
-                <p>Our current portfolio includes several specialized platforms, with new ventures continually in development:</p>
-                <ul class="grid">
-                    <li>Staylas.com</li>
-                    <li>Staylashousing.com</li>
-                    <li>Finderoom.com</li>
-                    <li>Housingmates.com</li>
+                <h2>Upcoming Projects (Future Roadmap)</h2>
+                <p>We are actively developing our next generation of platforms to meet emerging market needs:</p>
+                <ul class="grid upcoming-grid">
+                    <li>International Shopping Ecommerce Platform</li>
+                    <li>Online Programming Support Platform</li>
+                    <li>Digital Marketing Service Platform</li>
+                    <li>International Online Job Service Platform</li>
+                    <li>Freelancing Course Service Platform</li>
+                    <li>Social Media Managing Service Platform</li>
+                    <li>Online Real Traffic Management Service</li>
+                    <li>Global Eco System Connecting Project</li>
+                    <li>World Wide Online Buy/Sell (Easy Way) Platform</li>
                 </ul>
             </section>
 
