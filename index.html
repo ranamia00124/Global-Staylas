@@ -3,165 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Staylas LLC | Leading Digital Ventures & Strategic Advisory</title>
-    <meta name="description" content="Global Staylas LLC is a premier US-based venture firm specializing in building, operating, and scaling high-growth international online platforms.">
+    <title>Global Staylas LLC | Strategic Digital Venture & IT Consulting</title>
+    <meta name="description" content="Global Staylas LLC is a Delaware-based venture firm specializing in platform management, IT consulting, and scaling international digital ecosystems.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
-        .hero-bg { background: radial-gradient(circle at top right, #1e293b, #0f172a); }
-        .gradient-text { background: linear-gradient(90deg, #60a5fa, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; background-color: #fafafa; }
+        .hero-bg { background: radial-gradient(circle at 0% 0%, #1e293b 0%, #0f172a 100%); }
+        .section-title { position: relative; padding-bottom: 20px; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 60px; height: 4px; background: #2563eb; border-radius: 2px; }
+        .section-title-center::after { left: 50%; transform: translateX(-50%); }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
     </style>
 </head>
-<body class="bg-[#fafafa] text-slate-900">
+<body class="text-slate-800">
 
-    <nav class="fixed w-full z-50 glass-nav">
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-xl">G</span>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-200">
+                        <span class="text-white font-extrabold text-xl italic">GS</span>
                     </div>
-                    <span class="text-xl font-bold tracking-tight text-slate-900 uppercase">Global <span class="text-blue-600">Staylas</span></span>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900">GLOBAL <span class="text-blue-600 font-bold">STAYLAS</span></span>
                 </div>
-                <div class="hidden md:flex items-center space-x-10 text-sm font-semibold text-slate-600 uppercase tracking-widest">
-                    <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <div class="hidden lg:flex items-center space-x-8 text-[13px] font-bold text-slate-500 uppercase tracking-widest">
+                    <a href="#vision" class="hover:text-blue-600 transition">Our Vision</a>
                     <a href="#expertise" class="hover:text-blue-600 transition">Expertise</a>
-                    <a href="#process" class="hover:text-blue-600 transition">Process</a>
-                    <a href="#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Contact Us</a>
+                    <a href="#governance" class="hover:text-blue-600 transition">Governance</a>
+                    <a href="#roadmap" class="hover:text-blue-600 transition">Roadmap</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition shadow-md shadow-blue-100">Get in Touch</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="hero-bg pt-44 pb-32 text-white overflow-hidden relative">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 text-center">
-            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">Delaware Registered | Global Reach</span>
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-[1.1]">
-                Sculpting the Future of <br><span class="gradient-text">Global Commerce</span>
-            </h1>
-            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-                Global Staylas LLC is a strategic venture firm dedicated to building and scaling high-growth international platforms through precision operations and data-driven innovation.
-            </p>
-            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-                <a href="#expertise" class="w-full md:w-auto bg-blue-600 text-white px-10 py-4 rounded-xl font-bold hover:scale-105 transition shadow-2xl shadow-blue-500/20">Explore Our Portfolio</a>
-                <a href="#process" class="w-full md:w-auto bg-white/5 border border-white/10 text-white px-10 py-4 rounded-xl font-bold hover:bg-white/10 transition">How We Operate</a>
+    <header class="hero-bg pt-48 pb-32 text-white relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block px-4 py-1.5 mb-8 text-[11px] font-bold tracking-[0.2em] uppercase bg-blue-500/10 text-blue-400 rounded-lg border border-blue-500/20">A Delaware Private Entity | Entity No: 372208981</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-8">
+                    Architecting the Next Era of <span class="text-blue-500">Global Ventures.</span>
+                </h1>
+                <p class="text-xl text-slate-400 leading-relaxed mb-12">
+                    Global Staylas LLC is a strategic investment and operational management firm dedicated to building secure, scalable, and compliant digital ecosystems for the global market.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#expertise" class="bg-blue-600 px-10 py-4 rounded-xl font-bold hover:bg-blue-700 transition text-center">Our Strategic Focus</a>
+                    <a href="#vision" class="bg-white/5 border border-white/10 px-10 py-4 rounded-xl font-bold hover:bg-white/10 transition text-center">Company Mission</a>
+                </div>
             </div>
         </div>
-        <div class="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div class="absolute bottom-0 right-0 p-10 opacity-10">
+            <svg class="w-96 h-96" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+        </div>
     </header>
 
-    <section class="py-12 bg-white border-b">
+    <section id="vision" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div><p class="text-3xl font-bold text-slate-900">$2M+</p><p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Transaction Volume</p></div>
-                <div><p class="text-3xl font-bold text-slate-900">10+</p><p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Global Platforms</p></div>
-                <div><p class="text-3xl font-bold text-slate-900">24/7</p><p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Operational Sync</p></div>
-                <div><p class="text-3xl font-bold text-slate-900">99.9%</p><p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Service Uptime</p></div>
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-xs font-bold text-blue-600 uppercase tracking-[0.3em] mb-4">The Foundation</h2>
+                    <h3 class="text-4xl font-extrabold text-slate-900 mb-8 section-title leading-tight">Empowering Global Connectivity Through Technical Excellence.</h3>
+                    <div class="space-y-6 text-slate-600 leading-relaxed">
+                        <p>
+                            Founded in 2025, **Global Staylas LLC** was established to bridge the gap between technical innovation and international commercial viability. Based in Delaware, the hub of global business, our firm specializes in the full lifecycle of digital ventures.
+                        </p>
+                        <p>
+                            We believe that the future of commerce lies in decentralized, highly efficient, and transparent online platforms. Our mission is to engineer these platforms with a focus on **security, data integrity, and cross-border accessibility.**
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
+                        <h4 class="text-2xl font-bold text-slate-900 mb-4 italic text-blue-600">Vision</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">To become a leading global operator of niche-market platforms that facilitate seamless digital services for millions of users.</p>
+                    </div>
+                    <div class="p-8 bg-slate-900 rounded-3xl text-white">
+                        <h4 class="text-2xl font-bold mb-4 italic text-blue-400">Values</h4>
+                        <p class="text-sm text-slate-300 leading-relaxed">We prioritize 100% legal compliance, technical transparency, and a 'security-first' approach in every project we initiate.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-24 bg-white">
+    <section id="expertise" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row gap-16 items-center">
-                <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold text-slate-900 mb-8 leading-tight">Bridging Innovation and <span class="text-blue-600">Market Scalability.</span></h2>
-                    <p class="text-slate-600 text-lg mb-6 leading-relaxed">
-                        Headquartered in Delaware, USA, Global Staylas LLC operates as a parent entity that facilitates global commerce and digital connectivity. We don't just build websites; we engineer digital ecosystems.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start space-x-4">
-                            <div class="mt-1 bg-blue-100 p-1 rounded-full"><svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></div>
-                            <p class="text-slate-700 font-medium">Strategic asset allocation for high-yield digital ventures.</p>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="mt-1 bg-blue-100 p-1 rounded-full"><svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg></div>
-                            <p class="text-slate-700 font-medium">Compliance-first operational frameworks for US & International markets.</p>
-                        </div>
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-xs font-bold text-blue-600 uppercase tracking-[0.3em] mb-4">Our Expertise</h2>
+                <h3 class="text-4xl font-extrabold text-slate-900 mb-6 section-title-center">Diverse Operational Capabilities</h3>
+                <p class="text-slate-500">We leverage industry-leading frameworks to build, operate, and scale high-growth international platforms.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-[40px] border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m4 0h1m-5 10h1m4 0h1m-5-5h1m4 0h1"></path></svg>
                     </div>
+                    <h4 class="text-xl font-extrabold mb-4">Platform Engineering</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Developing robust, scalable backend infrastructures for international service platforms, ensuring high availability and seamless user experience.</p>
+                    <ul class="text-xs space-y-2 text-slate-400 font-bold uppercase tracking-wider">
+                        <li>● Cloud Infrastructure</li>
+                        <li>● API Integration</li>
+                        <li>● Security Audits</li>
+                    </ul>
                 </div>
-                <div class="lg:w-1/2 bg-slate-900 rounded-3xl p-10 text-white shadow-2xl relative">
-                    <div class="absolute -top-6 -right-6 bg-blue-600 p-6 rounded-2xl shadow-xl hidden md:block">
-                        <p class="text-xs uppercase tracking-widest font-bold">Incorportated</p>
-                        <p class="text-2xl font-bold">2025</p>
+                <div class="bg-white p-10 rounded-[40px] border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Corporate Identity</h3>
-                    <ul class="space-y-6 opacity-80 text-sm">
-                        <li class="flex justify-between border-b border-white/10 pb-4"><span>Entity Name</span><span class="font-bold">Global Staylas LLC</span></li>
-                        <li class="flex justify-between border-b border-white/10 pb-4"><span>Jurisdiction</span><span class="font-bold text-blue-400 underline">Delaware, USA</span></li>
-                        <li class="flex justify-between border-b border-white/10 pb-4"><span>Focus</span><span class="font-bold">IT Strategy & VC</span></li>
-                        <li class="flex justify-between"><span>Status</span><span class="text-green-400 font-bold flex items-center">● ACTIVE</span></li>
+                    <h4 class="text-xl font-extrabold mb-4">Legal Compliance</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Navigating the complex landscape of international business regulations, including Delaware LLC laws, GDPR, and US federal requirements.</p>
+                    <ul class="text-xs space-y-2 text-slate-400 font-bold uppercase tracking-wider">
+                        <li>● Federal Regulations</li>
+                        <li>● Data Privacy</li>
+                        <li>● Policy Frameworks</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-10 rounded-[40px] border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-extrabold mb-4">Strategic Advisory</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Guiding high-potential digital ventures from initial concept to global scale, focusing on sustainable growth and operational efficiency.</p>
+                    <ul class="text-xs space-y-2 text-slate-400 font-bold uppercase tracking-wider">
+                        <li>● Market Analysis</li>
+                        <li>● Growth Scaling</li>
+                        <li>● Risk Management</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="process" class="py-24 bg-slate-900 text-white">
+    <section id="governance" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="bg-slate-900 rounded-[60px] p-12 lg:p-20 text-white relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-xs font-bold text-blue-400 uppercase tracking-[0.3em] mb-6">Compliance & Governance</h2>
+                    <h3 class="text-4xl font-extrabold mb-10 leading-tight">A Commitment to Legality <br>and Professional Integrity.</h3>
+                    <div class="grid lg:grid-cols-2 gap-16">
+                        <div class="space-y-6 text-slate-400 leading-relaxed">
+                            <p>
+                                Global Staylas LLC is a legally registered entity under the laws of the **State of Delaware, United States**. We operate with full transparency and adhere to the strictest standards of corporate governance. 
+                            </p>
+                            <p>
+                                Our internal risk mitigation protocols ensure that all our platforms and digital services operate within the legal boundaries of their respective jurisdictions. From banking compliance to data protection, we leave no stone unturned.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-8">
+                            <div>
+                                <h5 class="text-white font-bold mb-2">Registered Entity</h5>
+                                <p class="text-sm text-slate-500 italic">Delaware Secretary of State</p>
+                            </div>
+                            <div>
+                                <h5 class="text-white font-bold mb-2">Status</h5>
+                                <p class="text-sm text-green-400 font-extrabold">IN GOOD STANDING</p>
+                            </div>
+                            <div>
+                                <h5 class="text-white font-bold mb-2">Internal Audit</h5>
+                                <p class="text-sm text-slate-500 italic">Quarterly Compliance Review</p>
+                            </div>
+                            <div>
+                                <h5 class="text-white font-bold mb-2">Governance</h5>
+                                <p class="text-sm text-slate-500 italic">Centralized Management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-20">
-                <h2 class="text-4xl font-bold">Operational Lifecycle</h2>
-                <p class="mt-4 text-slate-400">How we transform ideas into global digital assets.</p>
+                <h2 class="text-xs font-bold text-blue-600 uppercase tracking-[0.3em] mb-4">The Future</h2>
+                <h3 class="text-4xl font-extrabold text-slate-900 mb-6 section-title-center">Future Roadmap (2026 - 2030)</h3>
             </div>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="relative group">
-                    <div class="text-6xl font-black text-white/5 absolute -top-10 left-0">01</div>
-                    <h4 class="text-xl font-bold mb-4">Venture Analysis</h4>
-                    <p class="text-slate-400 text-sm">Rigorous market research to identify sectors with high scalability and low digital penetration.</p>
+            
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-1/4 text-center md:text-right font-black text-6xl text-slate-100">2026</div>
+                    <div class="md:w-3/4 p-10 bg-slate-50 rounded-[40px] border-l-8 border-blue-600">
+                        <h5 class="text-xl font-bold mb-3 text-slate-900">Platform Diversification & Financial Integration</h5>
+                        <p class="text-slate-500 text-sm">Expanding our venture portfolio into niche digital services and integrating high-security payment infrastructures (Stripe, Mercury) across all platforms.</p>
+                    </div>
                 </div>
-                <div class="relative group">
-                    <div class="text-6xl font-black text-white/5 absolute -top-10 left-0">02</div>
-                    <h4 class="text-xl font-bold mb-4">Strategic Build</h4>
-                    <p class="text-slate-400 text-sm">Deploying top-tier engineering and legal frameworks to build secure, compliant platforms.</p>
+                <div class="flex flex-col md:flex-row items-center gap-10 opacity-60">
+                    <div class="md:w-1/4 text-center md:text-right font-black text-6xl text-slate-100">2027</div>
+                    <div class="md:w-3/4 p-10 bg-slate-50 rounded-[40px] border-l-8 border-slate-300">
+                        <h5 class="text-xl font-bold mb-3 text-slate-900">AI-Driven Operational Automation</h5>
+                        <p class="text-slate-500 text-sm">Implementing advanced AI frameworks to automate platform management, user support, and risk detection systems.</p>
+                    </div>
                 </div>
-                <div class="relative group">
-                    <div class="text-6xl font-black text-white/5 absolute -top-10 left-0">03</div>
-                    <h4 class="text-xl font-bold mb-4">Global Scaling</h4>
-                    <p class="text-slate-400 text-sm">Automating operations and scaling user connectivity across multiple international borders.</p>
+                <div class="flex flex-col md:flex-row items-center gap-10 opacity-40">
+                    <div class="md:w-1/4 text-center md:text-right font-black text-6xl text-slate-100">2030</div>
+                    <div class="md:w-3/4 p-10 bg-slate-50 rounded-[40px] border-l-8 border-slate-200">
+                        <h5 class="text-xl font-bold mb-3 text-slate-900">Global Digital Leadership</h5>
+                        <p class="text-slate-500 text-sm">Solidifying Global Staylas LLC as a premier operator of international digital ecosystems, facilitating cross-border commerce on a global scale.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-white border-t pt-20 pb-10">
+    <footer id="contact" class="bg-slate-900 text-slate-400 pt-24 pb-12">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-16 mb-20">
-                <div class="col-span-1">
-                    <div class="flex items-center space-x-2 mb-8">
-                        <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
-                            <span class="text-white font-bold text-xl">G</span>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-10">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg italic">GS</span>
                         </div>
-                        <span class="text-xl font-bold text-slate-900 uppercase">GLOBAL STAYLAS</span>
+                        <span class="text-xl font-bold text-white tracking-tight uppercase">GLOBAL STAYLAS LLC</span>
                     </div>
-                    <p class="text-slate-500 text-sm leading-relaxed">
-                        A Delaware registered private firm focused on the digital economy, IT consulting, and strategic platform management.
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-sm mb-10">
+                        A Delaware-based venture firm specializing in building, operating, and scaling a diverse portfolio of high-growth international online platforms.
                     </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="hover:text-blue-500">LinkedIn</a>
+                        <a href="#" class="hover:text-blue-500">Crunchbase</a>
+                        <a href="#" class="hover:text-blue-500">Twitter</a>
+                    </div>
                 </div>
                 <div>
-                    <h5 class="text-sm font-bold text-slate-900 uppercase tracking-widest mb-8">Global HQ</h5>
-                    <p class="text-slate-500 text-sm leading-relaxed">
+                    <h5 class="text-white font-bold uppercase tracking-widest text-xs mb-10">Headquarters</h5>
+                    <p class="text-sm leading-relaxed text-slate-500">
                         1111B S Governors Ave, <br>STE 48471, Dover, <br>DE 19904, United States.
                     </p>
-                    <p class="mt-4 text-blue-600 font-bold text-sm">contact@globalstaylas.com</p>
+                    <p class="mt-6 text-blue-400 font-bold text-sm">admin@globalstaylas.com</p>
                 </div>
                 <div>
-                    <h5 class="text-sm font-bold text-slate-900 uppercase tracking-widest mb-8">Legal & Policy</h5>
-                    <ul class="space-y-4 text-sm font-semibold text-slate-600">
-                        <li><a href="privacy-policy.html" class="hover:text-blue-600 underline decoration-blue-200">Privacy & Data Protection</a></li>
-                        <li><a href="terms-of-service.html" class="hover:text-blue-600 underline decoration-blue-200">Terms of Use & Service</a></li>
-                        <li><a href="#" class="hover:text-blue-600">Cookie Policy</a></li>
+                    <h5 class="text-white font-bold uppercase tracking-widest text-xs mb-10">Governance</h5>
+                    <ul class="space-y-4 text-sm font-semibold text-slate-500">
+                        <li><a href="privacy-policy.html" class="hover:text-white underline decoration-slate-700">Privacy & Data Protection</a></li>
+                        <li><a href="terms-of-service.html" class="hover:text-white underline decoration-slate-700">Terms of Use & Service</a></li>
+                        <li><a href="#" class="hover:text-white">Cookie Compliance</a></li>
+                        <li><a href="#" class="hover:text-white">Business Ethics</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 font-medium">
-                <p>© 2026 Global Staylas LLC. Delaware Entity Number: 372208981.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Crunchbase</a>
-                    <a href="#">Contact</a>
-                </div>
+            <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-600 font-bold tracking-[0.2em] uppercase">
+                <p>© 2026 GLOBAL STAYLAS LLC. All rights reserved.</p>
+                <p>Entity Filing Number: 372208981</p>
             </div>
         </div>
     </footer>
